@@ -1,0 +1,32 @@
+//  Import Global Rules
+@use "sass/layout/_global-rules.scss";
+
+// Import Contact
+@use "sass/pages/contact";
+
+// Import Colors
+@use "sass/variables/colors" as *;
+
+// Control Flow  => If And Else
+
+$theme: "light";
+$theme: "dark";
+
+//  Control Flow  For element
+body {
+	@if $theme == "light" {
+		background-color: whitesmoke;
+		color: #444444;
+	} @else {
+		background-color: #444444;
+		color: whitesmoke;
+	}
+}
+
+$rounded: false;
+$rounded: true;
+button {
+	outline: none;
+	background-color: dodgerblue;
+	border-radius: if($rounded, 10px, null);
+}

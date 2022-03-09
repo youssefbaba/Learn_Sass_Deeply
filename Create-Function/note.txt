@@ -1,0 +1,7 @@
+// Declaration function 
+    - @function Name_Of_Function($parameter_01 , $parameter_01 , ...){
+        //Css Code
+        @return
+    }
+// Utilization of function
+    - Name_Of_Function(Argument_01 , Argument_02 ,....);

@@ -1,0 +1,16 @@
+// Declaration Loop For
+    - @for $var from start to end {
+        }
+    - @for $i from 1 to 10 {
+        }
+    - this case : to  => end - 1 
+    - i = 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9
+
+
+    - @for $var from start through end {
+            }
+    - @for $i from 1 through  10 {
+            }
+    - this case  : through => end
+
+    - i =  1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10

@@ -1,0 +1,1 @@
+.arrow{width:300px;height:300px;line-height:300px;text-align:center;color:black;background-color:#dcdcdc;position:relative;margin:auto;margin-top:60px}.arrow:before{border:20px solid red;position:absolute;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);top:0px}

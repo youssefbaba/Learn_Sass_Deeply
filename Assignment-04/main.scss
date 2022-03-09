@@ -1,0 +1,12 @@
+/* Method One */
+.class {
+	font-weight: bold;
+	font-size: 20px;
+}
+/* Method Two */
+.class {
+	font: {
+		weight: bold;
+		size: 20px;
+	}
+}

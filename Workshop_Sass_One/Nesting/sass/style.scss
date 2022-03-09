@@ -1,0 +1,96 @@
+// Import Reset
+@import "libs/reset";
+body {
+	background-color: #f6f6f6;
+}
+
+p {
+	margin: 1rem;
+}
+
+// Nesting
+
+.table {
+	width: 100%;
+	border-collapse: collapse;
+	td,
+	th {
+		border: 1px solid #dddddd;
+		text-align: left;
+		padding: 8px;
+	}
+	tr {
+		&:nth-child(even) {
+			background-color: #dddddd;
+		}
+	}
+	@media only screen and (min-width: 992px) {
+		width: 50%;
+	}
+}
+
+.btn {
+	background-color: dodgerblue;
+	padding: 10px;
+	&:hover {
+		background-color: rgba(30, 143, 255, 0.8);
+	}
+	.theme-vert & {
+		background-color: green;
+	}
+	@media only screen and (min-width: 992px) {
+		padding: 15px;
+	}
+}
+
+// Direct Child
+
+.parent > {
+	background-color: red;
+	font-size: 20px;
+	.child {
+		font-size: 18px;
+		padding: 10px;
+		> .grand-child {
+			border: 1px solid green;
+		}
+	}
+}
+
+// Next Elemenet
+
+.element + {
+	font-size: 18px;
+	color: #444;
+	.next-element {
+		font-size: 15px;
+		border: 1px solid blue;
+		+ .next-element {
+			background-color: gray;
+		}
+	}
+}
+
+// Nesting For Property
+.class {
+	width: 100px;
+	height: 100px;
+	font: {
+		size: 20px;
+		weight: bold;
+		style: italic;
+	}
+	margin: auto {
+		top: 60px;
+		bottom: 50px;
+	}
+	border: 2px solid green {
+		bottom: 1px solid red;
+	}
+	background: {
+		image: url(../images/photo.png);
+		repeat: no-repeat;
+		position: center center;
+		size: cover;
+	}
+}

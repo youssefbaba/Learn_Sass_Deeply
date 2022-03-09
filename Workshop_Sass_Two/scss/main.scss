@@ -1,0 +1,50 @@
+// Import Reset
+@import "resets";
+
+// Imprt Variables
+@import "variables";
+
+// Import Functions
+@import "functions";
+
+// Import Mixins
+@import "mixins";
+
+body {
+	background-color: $primary-color;
+	color: $text-color;
+}
+.main {
+	@include flexCenter(row);
+	width: 80% - 40%;
+	// width: calc(80% - 40px);
+	// @include rotate;
+	// @include rotate(20deg);
+	// @include transform(rotate(20deg));
+	@include rotate(0deg);
+	margin: auto {
+		top: 20px;
+		bottom: 0;
+	}
+	#{&}-paragraph-one {
+		// font-weight: map-get($map: $font-weight, $key: "bold");
+		font-weight: weight(bold);
+
+		&:hover {
+			color: pink;
+		}
+	}
+	@include mobile {
+		flex-direction: column;
+	}
+
+	#{&}-paragraph-two {
+		@extend .main-paragraph-one;
+		&:hover {
+			color: $accent-color;
+		}
+	}
+}
+.light {
+	@include theme($light-theme: true);
+}

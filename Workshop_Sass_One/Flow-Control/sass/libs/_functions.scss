@@ -1,0 +1,17 @@
+$base-font-size: 16px !default;
+
+@use "sass:math";
+// Declaration Function
+@function rem($size, $root: $base-font-size) {
+	$root-without-unit: math.div($root, ($root * 0 + 1));
+	@return calc($size / $root-without-unit) * 1rem;
+}
+
+//  16px / 1px   = 16
+
+@function em($size, $size-parent: $base-font-size) {
+	$size-parent-without-unit: math.div($size-parent, ($size-parent * 0 + 1));
+	@return calc($size / $size-parent-without-unit) * 1em;
+}
+
+//  16px / 1px   = 16

@@ -1,0 +1,88 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --main-color: red;
+}
+
+.contact {
+  font-style: 20px;
+  padding: 10px;
+  background-color: var(--main-color);
+}
+
+.black-overlay {
+  font-size: 20px;
+  padding: 15px;
+  position: relative;
+}
+.black-overlay::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes go-up {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 50%;
+  }
+}
+@keyframes go-up {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 50%;
+  }
+}
+@-webkit-keyframes go-down {
+  from {
+    top: 0;
+  }
+  to {
+    top: 50%;
+  }
+}
+@keyframes go-down {
+  from {
+    top: 0;
+  }
+  to {
+    top: 50%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

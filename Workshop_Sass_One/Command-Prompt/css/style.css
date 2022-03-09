@@ -1,0 +1,307 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 18px;
+}
+
+body {
+  background-color: #f6f6f6;
+  padding: 30px;
+}
+
+p {
+  margin: 1rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table td,
+.table th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+@media only screen and (min-width: 992px) {
+  .table {
+    width: 50%;
+  }
+}
+
+.btn, .card-confirme, .btn-danger, .card-refuse {
+  padding: 0.2777777778em 0.6666666667em;
+  border-radius: 5px;
+}
+
+.btn, .card-confirme, .btn-danger, .card-refuse {
+  background-color: #4d4d4d;
+  text-decoration: none;
+  color: #fff;
+}
+.btn:hover, .card-confirme:hover, .btn-danger:hover, .card-refuse:hover {
+  background-color: rgba(30, 143, 255, 0.8);
+  background-color: rgba(77, 77, 77, 0.5);
+  background-color: #1a1a1a;
+}
+
+.big {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.btn-danger, .card-refuse {
+  color: #444;
+  background-color: red;
+}
+.btn-danger:hover, .card-refuse:hover {
+  background-color: rgba(255, 0, 0, 0.8);
+  background-color: rgba(255, 0, 0, 0.5);
+  background-color: #ff6666;
+}
+
+.card {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.card {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  position: relative;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+  border-top-color: red;
+  left: calc(50% - 10px);
+  bottom: -20px;
+}
+
+.card-actions {
+  display: flex;
+}
+
+.card-confirme {
+  cursor: pointer;
+}
+
+.card-refuse {
+  cursor: pointer;
+}
+
+@media only screen and (max-width:500px) {
+  .card-actions {
+    display: block;
+  }
+
+  .btn, .btn-danger, .card-confirme, .card-refuse {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .btn, .btn-danger, .card-confirme, .card-refuse {
+    width: 100%;
+  }
+}
+.m-1 {
+  margin: 0 0.25rem;
+}
+
+.m-2 {
+  margin: 0 0.5rem;
+}
+
+.m-3 {
+  margin: 0 0.75rem;
+}
+
+.m-4 {
+  margin: 0 1rem;
+}
+
+.col-1 {
+  flex: 0 0 auto;
+  flex-basis: 8.3333333333%;
+}
+
+.col-2 {
+  flex: 0 0 auto;
+  flex-basis: 16.6666666667%;
+}
+
+.col-3 {
+  flex: 0 0 auto;
+  flex-basis: 25%;
+}
+
+.col-4 {
+  flex: 0 0 auto;
+  flex-basis: 33.3333333333%;
+}
+
+.col-5 {
+  flex: 0 0 auto;
+  flex-basis: 41.6666666667%;
+}
+
+.col-6 {
+  flex: 0 0 auto;
+  flex-basis: 50%;
+}
+
+.col-7 {
+  flex: 0 0 auto;
+  flex-basis: 58.3333333333%;
+}
+
+.col-8 {
+  flex: 0 0 auto;
+  flex-basis: 66.6666666667%;
+}
+
+.col-9 {
+  flex: 0 0 auto;
+  flex-basis: 75%;
+}
+
+.col-10 {
+  flex: 0 0 auto;
+  flex-basis: 83.3333333333%;
+}
+
+.col-11 {
+  flex: 0 0 auto;
+  flex-basis: 91.6666666667%;
+}
+
+.col-12 {
+  flex: 0 0 auto;
+  flex-basis: 100%;
+}
+
+.icon-bear {
+  background-image: url("../images/bear.png");
+}
+
+.icon-lion {
+  background-image: url("../images/lion.png");
+}
+
+.icon-camal {
+  background-image: url("../images/camal.png");
+}
+
+.dog {
+  color: #fff;
+  background-color: black;
+  height: 2.2222222222rem;
+}
+
+.cat {
+  color: #000;
+  background-color: yellow;
+  height: 1.6666666667rem;
+}
+
+.fish {
+  color: #000;
+  background-color: dodgerblue;
+  height: 1.9444444444rem;
+}
+
+/* This Comment Will Show In Css File  But Not In Compressed Mode*/
+/*! This Comment Will Show In Css File And  In Compressed Mode*/
+/*  This Comment Will Show In Css File But Not In Map */
+/* ! This Commnet Will Show In  Css File And Map */
+/*
+sass sass/style.scss css/style.css --watch --style=compressed  --no-source-map
+
+--style=compressed  =>  output file is compressed file
+--no-source-map  =>  Not generated source map
+-- watch  =>  Watch stylesheets and recompile when they change.
+
+*/
+
+/*# sourceMappingURL=style.css.map */

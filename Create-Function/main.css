@@ -1,0 +1,36 @@
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+:root {
+	--main-color: red;
+}
+
+.contact {
+	font-style: 20px;
+	padding: 10px;
+	background-color: var(--main-color);
+}
+
+.element {
+	width: 200px;
+	height: 100px;
+}
+
+.box {
+	background-color: #f6f6f6;
+	font-size: 20px;
+	top: 1000px;
+}
+/*# sourceMappingURL=main.css.map */

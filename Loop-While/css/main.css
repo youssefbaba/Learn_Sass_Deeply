@@ -1,0 +1,44 @@
+@use "sass/layout/global-rules";
+@use "sass/pages/contact";
+@use "sass/variables/colors" as *;
+@use "sass/helpers/mixins" as *;
+.width-100 {
+  font-size: 20px;
+}
+
+.width-200 {
+  font-size: 20px;
+}
+
+.width-300 {
+  font-size: 20px;
+}
+
+.width-400 {
+  font-size: 20px;
+}
+
+.width-500 {
+  font-size: 20px;
+}
+
+.width-600 {
+  font-size: 20px;
+}
+
+.width-700 {
+  font-size: 20px;
+}
+
+.width-800 {
+  font-size: 20px;
+}
+
+.width-900 {
+  font-size: 20px;
+}
+
+.width-1000 {
+  font-size: 20px;
+}
+/*# sourceMappingURL=main.css.map */

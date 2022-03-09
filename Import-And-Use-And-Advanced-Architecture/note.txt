@@ -1,0 +1,4 @@
+// Ignore compile , this file used just for include
+    - _Name_Of_File.scss
+
+// @import "path"   or   @use "path"   ;        => for import file inside other file

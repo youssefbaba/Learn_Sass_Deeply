@@ -1,0 +1,10 @@
+@use "sass/helpers/functions" as *;
+
+$start: 100;
+@for $i from 1 through 5 {
+	.box-#{$start} {
+		width: $start * 1px;
+		height: double($start) * 1px;
+	}
+	$start: double($start);
+}

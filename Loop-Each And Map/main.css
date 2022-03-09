@@ -1,0 +1,113 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --main-color: red;
+}
+
+.contact {
+  font-style: 20px;
+  padding: 10px;
+  background-color: var(--main-color);
+}
+
+.red-theme .products {
+  background-color: red;
+  padding: 10px;
+  border-bottom: 2px solid red;
+}
+.red-theme .products .title {
+  color: red;
+  font-weight: bold;
+}
+
+.green-theme .products {
+  background-color: green;
+  padding: 10px;
+  border-bottom: 2px solid green;
+}
+.green-theme .products .title {
+  color: green;
+  font-weight: bold;
+}
+
+.blue-theme .products {
+  background-color: blue;
+  padding: 10px;
+  border-bottom: 2px solid blue;
+}
+.blue-theme .products .title {
+  color: blue;
+  font-weight: bold;
+}
+
+.orange-theme .products {
+  background-color: orange;
+  padding: 10px;
+  border-bottom: 2px solid orange;
+}
+.orange-theme .products .title {
+  color: orange;
+  font-weight: bold;
+}
+
+.facebook {
+  color: white;
+  background-color: blue;
+  position: relative;
+}
+.facebook::before {
+  content: "facebook";
+  position: absolute;
+}
+
+.youtube {
+  color: white;
+  background-color: red;
+  position: relative;
+}
+.youtube::before {
+  content: "youtube";
+  position: absolute;
+}
+
+.github {
+  color: white;
+  background-color: black;
+  position: relative;
+}
+.github::before {
+  content: "github";
+  position: absolute;
+}
+
+.class-one {
+  font-size: 20px;
+  background-color: red;
+  padding: 10px;
+}
+
+.class-two {
+  font-size: 15px;
+  background-color: green;
+  padding: 7.5px;
+}
+
+.class-three {
+  font-size: 18px;
+  background-color: blue;
+  padding: 9px;
+}
+/*# sourceMappingURL=main.css.map */

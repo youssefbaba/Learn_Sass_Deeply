@@ -1,0 +1,52 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --main-color: red;
+}
+
+.contact {
+  font-style: 20px;
+  padding: 10px;
+  background-color: var(--main-color);
+}
+
+.triangle {
+  background-color: #f6f6f6;
+  color: black;
+  width: 300px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid gray;
+  margin: auto;
+  margin-top: 80px;
+  position: relative;
+}
+.triangle::before {
+  content: "";
+  position: absolute;
+  border: 25px solid transparent;
+  border-right-color: red;
+  left: -50px;
+}
+/*# sourceMappingURL=main.css.map */

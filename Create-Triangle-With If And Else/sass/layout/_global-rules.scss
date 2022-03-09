@@ -1,0 +1,16 @@
+* {
+	box-sizing: border-box;
+}
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+// Globale Variable In Css
+:root {
+	--main-color: red;
+}

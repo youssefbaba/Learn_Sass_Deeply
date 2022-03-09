@@ -1,0 +1,25 @@
+// Declaration Of Variable
+    -$Name_Of_Variable : Value;
+
+// using Variable
+    - .page{
+        color: $Name_Of_Variable;
+    }
+
+// Global Variable  => accessible anywhere
+$main_color:red;
+
+
+// local Variable  => accessible only inside element
+
+.footer{
+    $alt_color:green;
+    color :  $alt_color;
+}
+
+// if i need change value of globale variable  but i'm use local variable 
+.nav{
+     $alt_color:green !global;
+    color :  $alt_color;
+}
+

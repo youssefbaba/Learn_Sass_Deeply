@@ -1,0 +1,8 @@
+// Create Function
+@function weight($weight-name) {
+	@each $name, $value in $font-weight {
+		@if ($name == $weight-name) {
+			@return $value;
+		}
+	}
+}

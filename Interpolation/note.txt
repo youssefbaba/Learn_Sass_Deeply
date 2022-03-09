@@ -1,0 +1,8 @@
+// Interpolation
+$Name_Of_Variable : value;
+
+.box-#{$Name_Of_Variable}{
+    //Code Css
+    background-image: url("images/#{$Name_Of_Variable}.png");
+
+}

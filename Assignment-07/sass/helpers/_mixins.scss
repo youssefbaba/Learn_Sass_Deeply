@@ -1,0 +1,7 @@
+@mixin grid-system($columns) {
+	@for $i from 1 through 16 {
+		.col-#{$i} {
+			width: percentage($i / $columns);
+		}
+	}
+}

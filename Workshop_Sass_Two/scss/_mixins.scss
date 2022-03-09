@@ -1,0 +1,43 @@
+// Create Mixin
+@mixin flexCenter($direction) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: center;
+	align-items: center;
+}
+
+// Mixin Using Like Heritage
+
+@mixin rotate {
+	-webkit-transform: rotate(15deg);
+	-ms-transform: rotate(15deg);
+	transform: rotate(15deg);
+}
+
+// Mixin Using Like Function
+@mixin rotate($angle) {
+	@include transform(rotate($angle));
+}
+@mixin transform($transform-name) {
+	-webkit-transform: $transform-name;
+	-ms-transform: $transform-name;
+	-moz-transform: $transform-name;
+	-o-transform: $transform-name;
+	transform: $transform-name;
+}
+// Create Mixin for light and Dark Theme
+
+@mixin theme($light-theme: false) {
+	@if $light-theme {
+		background-color: lighten($color: $primary-color, $amount: 100%);
+		color: darken($color: $text-color, $amount: 100%);
+	}
+}
+
+// Create Mixin Media Queries
+
+@mixin mobile {
+	@media (max-width: $mobile) {
+		@content;
+	}
+}

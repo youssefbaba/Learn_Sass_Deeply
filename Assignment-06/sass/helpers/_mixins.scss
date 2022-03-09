@@ -1,0 +1,28 @@
+@mixin arrow($direction) {
+	content: "";
+	position: absolute;
+	border: 20px solid transparent;
+	@if $direction == "top" or $direction == "bottom" {
+		left: 50%;
+		transform: translateX(-50%);
+		@if $direction == "top" {
+			top: -40px;
+			border-bottom-color: red;
+		} @else {
+			bottom: -40px;
+			border-top-color: red;
+		}
+	} @else if $direction == "right" or $direction == "left" {
+		top: 50%;
+		transform: translateY(-50%);
+		@if $direction == "right" {
+			right: -40px;
+			border-left-color: red;
+		} @else {
+			left: -40px;
+			border-right-color: red;
+		}
+	} @else {
+		@error "Not Found";
+	}
+}

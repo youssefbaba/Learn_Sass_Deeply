@@ -1,0 +1,44 @@
+// Declaration list 
+    - Name_Of_List : value_01 , value_02 , valu_e03 ,.......;
+
+
+// Declaration Map
+    - Name_Of_Map : (
+         Key_01:value_01,
+         Key_02:value_02,
+         Key_03:value_03,
+         .
+         .
+         )
+
+
+// Declaration Of Loop Each
+    - @each $var in list {
+    }
+
+
+
+// Utilization Loop each  in list 
+$colors : red ,green ,blue ;
+@each $color  in $colors {
+    // Css Code
+}
+
+
+// Utilization Loop each  in Map
+$font-weights: ("regular": 400, "medium": 500, "bold": 700);
+@each $weight , $value  in $font-weights {
+    // Css Code
+}
+
+
+//Declaration Of List the List
+
+$items :
+item_01 "item_02" item_03,
+item_01 "item_02" item_03,
+item_01 "item_02" item_03
+;
+
+
+

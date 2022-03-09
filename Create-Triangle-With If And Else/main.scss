@@ -1,0 +1,50 @@
+//  Import Global Rules
+@use "sass/layout/_global-rules.scss";
+
+// Import Contact
+@use "sass/pages/contact";
+
+// Import Colors
+@use "sass/variables/colors" as *;
+
+// Create Triangle with if and  else
+
+$direction: "top";
+$direction: "right";
+$direction: "bottom";
+$direction: "left";
+// $direction: "leftgggggg";
+.triangle {
+	background-color: #f6f6f6;
+	color: black;
+	width: 300px;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid gray;
+	margin: auto {
+		top: 80px;
+	}
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		border: 25px solid transparent;
+		@if $direction == "top" {
+			border-bottom-color: red;
+			top: -50px;
+		} @else if $direction == "right" {
+			border-left-color: red;
+			right: -50px;
+		} @else if $direction == "bottom" {
+			border-top-color: red;
+			bottom: -50px;
+		} @else if $direction == "left" {
+			border-right-color: red;
+			left: -50px;
+		} @else {
+			@error "This Direction  #{$direction} Is Invalid";
+		}
+	}
+}

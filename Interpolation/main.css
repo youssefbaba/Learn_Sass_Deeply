@@ -1,0 +1,39 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --main-color: red;
+}
+
+.contact {
+  font-style: 20px;
+  padding: 10px;
+  background-color: var(--main-color);
+}
+
+.ad-easyDev-uhiul61 {
+  padding: 15px;
+  width: 200px;
+  background-image: url("images/easyDev.png");
+  left: 0;
+}
+
+.ad-falcon-uhiul6m {
+  padding: 15px;
+  width: 200px;
+  background-image: url("images/falcon.png");
+  right: 0;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,173 @@
+$medium: 500px;
+
+$base-font-size: 18px;
+// $large: 1000px;
+// Import Reset
+@import "libs/reset";
+// Import Responsive
+@import "libs/responsive";
+// Import Mixins
+@import "libs/mixins";
+// Import Functions
+@import "libs/functions";
+
+// $large: 1000px;
+
+$primary: rgb(219, 219, 219);
+$primary: rgb(77, 77, 77);
+$padding: 20px;
+
+html,
+body {
+	font-size: $base-font-size;
+}
+
+body {
+	background-color: #f6f6f6;
+	padding: $padding + 10px;
+	// padding: $padding + 1rem;
+	// padding: $padding + 10;
+}
+
+p {
+	margin: 1rem;
+}
+
+// Nesting
+
+.table {
+	width: 100%;
+	border-collapse: collapse;
+	td,
+	th {
+		border: 1px solid #dddddd;
+		text-align: left;
+		padding: 8px;
+	}
+	tr {
+		&:nth-child(even) {
+			background-color: #dddddd;
+		}
+	}
+	@media only screen and (min-width: 992px) {
+		width: 50%;
+	}
+}
+// Placeholder Selector => Not Complied
+%btn {
+	// padding: rem(5) rem(12);
+	padding: em(5) em(12);
+	border-radius: 5px;
+}
+
+.btn {
+	@extend %btn;
+	background-color: $primary;
+	text-decoration: none;
+	// @debug lightness($primary) > 50%;
+	@if (lightness($primary) >= 50%) {
+		color: #000;
+	} @else {
+		color: #fff;
+	}
+	&:hover {
+		background-color: rgba(30, 143, 255, 0.8);
+		background-color: rgba($primary, 0.5);
+		background-color: darken($primary, 20);
+	}
+}
+.big {
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+// Element .btn Exist In Designe
+.btn-danger {
+	@extend .btn;
+	color: #444;
+	background-color: red;
+	&:hover {
+		background-color: rgba(255, 0, 0, 0.8);
+		background-color: rgba(red, 0.5);
+		background-color: lighten(red, 20);
+	}
+}
+%shadow {
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+}
+.card {
+	@extend %shadow;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #fff;
+	// @include rotate(20deg);
+	// @include transform(rotate(20deg));
+	// @include rotate(20deg);
+	position: relative;
+	@include arrow(red, 10px);
+}
+.card-actions {
+	display: flex;
+}
+.card-confirme {
+	@extend .btn;
+	cursor: pointer;
+}
+.card-refuse {
+	@extend .btn-danger;
+	cursor: pointer;
+}
+
+@media #{$medium-down} {
+	.card-actions {
+		display: block;
+	}
+	.btn {
+		width: 50%;
+	}
+}
+@media only screen and (min-width: $large) {
+	.btn {
+		width: 100%;
+	}
+}
+
+// loop For
+
+@for $i from 1 through 4 {
+	.m-#{$i} {
+		margin: 0 calc($i * 0.25rem);
+	}
+}
+
+// Grid System Bootstrap
+$colums: 12;
+@for $i from 1 through 12 {
+	.col-#{$i} {
+		flex: 0 0 auto;
+		flex-basis: percentage(calc($i / $colums));
+	}
+}
+
+// Loop Each with list
+
+$animals: bear, lion, camal;
+@each $animal in $animals {
+	.icon-#{$animal} {
+		background-image: url("../images/#{$animal}.png");
+	}
+}
+
+// Loop Each with list of list
+
+$categories: dog black 40px, cat yellow 30px, fish dodgerblue 35px;
+@each $name, $color, $height in $categories {
+	.#{$name} {
+		@if (lightness($color) > 40%) {
+			color: #000;
+		} @else {
+			color: #fff;
+		}
+		background-color: $color;
+		height: rem($height);
+	}
+}

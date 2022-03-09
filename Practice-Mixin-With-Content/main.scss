@@ -1,0 +1,48 @@
+//  Import Global Rules
+@use "sass/layout/global-rules";
+
+// Import Contact
+@use "sass/pages/contact";
+
+// Import Colors
+@use "sass/variables/colors" as *;
+
+// Import Mixins
+@use "sass/helpers/mixins" as *;
+
+// Import Functions
+@use "sass/helpers/functions" as *;
+
+// Practice Mixin With Content
+
+.black-overlay {
+	font-size: 20px;
+	padding: 15px;
+	position: relative;
+	&::before {
+		@include overlay(black, 0.5);
+	}
+}
+
+// Mixin Animation Method One
+
+@include key_Frame_One(fade-in);
+
+// Mixin Animation Method Two
+
+@include key_Frame-Two(go-up) {
+	from {
+		bottom: 0;
+	}
+	to {
+		bottom: 50%;
+	}
+}
+@include key_Frame-Two(go-down) {
+	from {
+		top: 0;
+	}
+	to {
+		top: 50%;
+	}
+}

@@ -1,0 +1,189 @@
+//  Import Global Rules
+@use "sass/layout/_global-rules.scss";
+
+// Import Contact
+@use "sass/pages/contact";
+
+// Import Colors
+@use "sass/variables/colors" as *;
+
+//Nesting And Parent Element
+
+// Nesting And Parent Element In Css
+
+.parent {
+	font-weight: 700;
+	padding: 10px;
+}
+.parent .child {
+	font-size: 20px;
+	padding: 15px;
+	color: $alt;
+	border: 1px solid $main;
+}
+.parent .child .grand-child {
+	font-size: 18px;
+}
+
+// Nesting And Parent Element In Sass
+.parent {
+	font-weight: 700;
+	padding: 10px;
+	.child {
+		font-size: 20px;
+		padding: 15px;
+		color: $alt;
+		border: 1px solid $main;
+		.grand-child {
+			font-size: 18px;
+		}
+	}
+}
+
+.parent-1 {
+	.child-1 {
+		font-size: 20px;
+		padding: 15px;
+		color: $alt;
+		border: 1px solid $main;
+		.grand-child-1 {
+			font-size: 18px;
+		}
+	}
+}
+
+.parent-2 {
+	font-weight: 700;
+	padding: 10px;
+	.child-2 {
+		font-size: 20px;
+		padding: 15px;
+		color: $alt;
+		border: 1px solid $main;
+	}
+	.grand-child-2 {
+		font-size: 18px;
+	}
+}
+
+// Grouping
+.parent-one,
+.parent-two {
+	padding: 20px;
+	.child {
+		padding: 10px;
+	}
+}
+
+// Advanced Selectors Like Direct Child , Next Element
+
+// Direct child
+.parent-3 > {
+	.direct-child-1 {
+		padding: 10px;
+	}
+	.direct-child-2 {
+		padding: 15px;
+	}
+}
+// Next Element
+.parent-4 + {
+	.next-element {
+		color: red;
+		padding: 15px;
+	}
+	.test {
+		border: 1px solid green;
+		font-weight: bold;
+	}
+}
+
+// First Element is Direct Child But Second Element Not
+.parent-5 {
+	> .direct-child-1 {
+		padding: 15px;
+	}
+	.not-direct-child {
+		padding: 20px;
+	}
+}
+// First Element is Next Element But Second Element Not
+.parent-5 {
+	+ .next-element {
+		padding: 15px;
+	}
+	.not-next-element {
+		padding: 20px;
+	}
+}
+// Other Way For DirecT Child
+
+.parent-6 {
+	color: darkblue;
+	> {
+		.child-one {
+			padding: 10px;
+		}
+		.child-two {
+			margin: 15px;
+		}
+		.child-three {
+			border: 1px solid red;
+		}
+	}
+	.text-not-direct-child {
+		display: flex;
+	}
+}
+
+.box {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	.image {
+		flex-basis: 40%;
+		padding: 10px;
+	}
+	.text {
+		flex-basis: 50%;
+		padding: 15px;
+	}
+	// Multtiple Class
+	&.red {
+		background-color: red;
+	}
+	&.green {
+		background-color: green;
+	}
+	&.blue {
+		background-color: blue;
+	}
+	// Pseudo Classe
+	&:hover {
+		box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+	}
+	&:first-child {
+		border: 1px solid red;
+	}
+	&:first-of-type {
+		border: 1px solid green;
+	}
+	//Pseudo Element
+	&::before {
+		content: "before";
+		position: absolute;
+	}
+	&::after {
+		content: "after";
+		position: absolute;
+	}
+	&:hover .image {
+		transform: skew(1.2) rotate(10deg);
+	}
+	:not(&) {
+		color: black;
+	}
+	[dir="rtl"] & {
+		direction: rtl;
+	}
+}

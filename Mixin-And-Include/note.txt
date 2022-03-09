@@ -1,0 +1,14 @@
+// Declaration Mixin
+    //Like Placeholder
+    @mixin name_Of_Mixin_One{
+        //Code Css
+    }
+    // Like Function
+    @mixin name_Of_Mixin_Two($parameter_01 ,$parameter_02 , ....){
+        //Code Css
+    }
+//Utlization Of Mixin
+    // Way One
+    @include name_Of_Mixin_One ;
+    // Way Two
+    @include name_Of_Mixin_Two(Argument_01 ,Argument_02 , ....) ;

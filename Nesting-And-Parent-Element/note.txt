@@ -1,0 +1,112 @@
+// Nesting And Parent Element
+    .parent{
+        //code Css 
+        .child{
+            //code Css
+            .grand-child{
+                //code Css
+            }
+        }
+    }
+     In Css 
+    .parent {
+        //Css Code
+    }
+    .parent .child{
+        //Css Code
+    }
+    .parent .child .grand-child {
+        //Css Code
+    }
+
+
+// All Element Are Direct Child 
+
+    .parent >{
+        //Code Css
+        .direct-child-1{
+            //Code Css
+        }
+        .direct-child-2{
+            //Code Css
+        }
+
+    }
+// All Elment Are Next Element 
+
+    .parent +{
+        //Code Css
+        .next-element-1{
+            //Code Css
+        }
+        .nex-element-2{
+            //Code Css
+        }
+
+    }
+
+// First Element Is Direct Child But Second Element Not
+
+    .parent{
+        //Code Css
+        >.direct-child{
+            //Code Css
+        }
+        .not-direct-child{
+            //Code Css
+        }
+    }
+
+// First Element I Next Element But Second Element Not
+
+    .parent{
+        //Code Css
+        +.direct-child{
+            //Code Css
+        }
+        .not-direct-child{
+            //Code Css
+        }
+    }
+
+// element itself   =>  &
+
+    .box{
+            //Code Css
+        //.box.red
+        &.red{
+            // Code Css
+        }
+    }
+//pseudot classes 
+
+    button{
+        // Code Css
+        &::hover{
+            // Code Css
+        }
+        &::focus{
+            // Code Css
+        }
+    }
+    .box{
+        // Code Css
+        &::first-child{
+            // Code Css
+        }
+        &::last-of-type{
+            // Code Css
+        }
+    }
+
+// pseudot  Element 
+
+    .card{
+        // Code Css
+        &::before{
+            //Code Css
+        }
+        &::after{
+            //Code Css
+        }
+    }

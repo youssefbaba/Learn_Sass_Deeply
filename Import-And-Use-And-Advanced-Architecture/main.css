@@ -1,0 +1,21 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contact {
+  font-style: 20px;
+  padding: 10px;
+  background-color: blue;
+}
+/*# sourceMappingURL=main.css.map */

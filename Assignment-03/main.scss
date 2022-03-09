@@ -1,0 +1,20 @@
+/* Method One */
+.class > {
+	.child {
+		padding: 10px;
+	}
+}
+/* Method Two */
+.class {
+	> .child {
+		padding: 10px;
+	}
+}
+/* Method Three */
+.class {
+	> {
+		.child {
+			padding: 10px;
+		}
+	}
+}

@@ -1,0 +1,72 @@
+//  Import Global Rules
+@use "sass/layout/_global-rules.scss";
+
+// Import Contact
+@use "sass/pages/contact";
+
+// Import Colors
+@use "sass/variables/colors" as *;
+
+// Property Declarations And Placeholder
+
+// Property Declarations
+
+.box {
+	font: {
+		style: italic;
+		weight: bold;
+		size: 20px;
+	}
+	padding: {
+		top: 10px;
+		left: 15px;
+		bottom: 10px;
+		right: 15px;
+	}
+	border: 1px solid red {
+		bottom: 2px solid green;
+	}
+	margin: auto {
+		top: 50px;
+		bottom: 50px;
+	}
+}
+
+// Placeholder
+
+// usable element
+.main-box-1 {
+	background-color: #f6f6f6;
+	padding: 20px;
+	border: 1px solid #cccccc;
+}
+
+.ads {
+	@extend .main-box-1;
+	font-style: 20px;
+	color: rebeccapurple;
+}
+
+.article {
+	font-size: 18px;
+	@extend .main-box-1;
+	color: crimson;
+}
+
+// just Source for Code Not Usable element
+
+%box {
+	background-color: #f6f6f6;
+	padding: 20px;
+	border: 1px solid #cccccc;
+}
+.left-aside {
+	font-style: italic;
+	@extend %box;
+	color: peru;
+}
+.right-aside {
+	@extend %box;
+	color: darkorange;
+	padding: 10px;
+}

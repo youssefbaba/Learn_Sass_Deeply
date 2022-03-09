@@ -1,0 +1,86 @@
+// Import Reset
+@import "libs/reset";
+body {
+	background-color: #f6f6f6;
+	padding: 20px;
+}
+
+p {
+	margin: 1rem;
+}
+
+// Nesting
+
+.table {
+	width: 100%;
+	border-collapse: collapse;
+	td,
+	th {
+		border: 1px solid #dddddd;
+		text-align: left;
+		padding: 8px;
+	}
+	tr {
+		&:nth-child(even) {
+			background-color: #dddddd;
+		}
+	}
+	@media only screen and (min-width: 992px) {
+		width: 50%;
+	}
+}
+// Placeholder Selector => Not Complied
+%btn {
+	padding: 5px 12px;
+	border-radius: 5px;
+}
+
+.btn {
+	@extend %btn;
+	background-color: dodgerblue;
+	text-decoration: none;
+	color: #fff;
+	&:hover {
+		background-color: rgba(30, 143, 255, 0.8);
+	}
+}
+// Element .btn Exist In Designe
+.btn-danger {
+	@extend .btn;
+	color: #444;
+	background-color: red;
+	&:hover {
+		background-color: rgba(255, 0, 0, 0.8);
+	}
+}
+%shadow {
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+}
+.card {
+	@extend %shadow;
+	padding: 10px;
+	border-radius: 5px;
+}
+.card-actions {
+	display: flex;
+}
+.card-confirme {
+	@extend .btn;
+	cursor: pointer;
+}
+.card-refuse {
+	@extend .btn-danger;
+	cursor: pointer;
+}
+
+// Placeholder Selector  => Not Compiled
+
+%main-box {
+	border-color: #f6f6f6;
+	padding: 15px;
+}
+.box {
+	@extend %main-box;
+	font-size: 20px;
+	color: #444;
+}

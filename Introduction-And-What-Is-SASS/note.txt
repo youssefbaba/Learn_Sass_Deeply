@@ -1,0 +1,19 @@
+- What Is SASS ?
+    - Syntactically Awesome Style Sheets
+    - Extension Of CSS
+    - Skill For Front End Developers
+    - Preprocessor  =>  Create Sass Code and changed this code in css code using compiler
+
+- Why We Use SASS 
+    - Save Time
+    - Make Less Error
+    - Clean And Organize The Code
+    - Pragramming Features
+
+- Features 
+    - Variables   =>  $Name_Variable
+    - Functions    =>  Custom function  function(){}
+    - loop         =>  for (){}
+    - Extend       =>  @extend
+    - Control Flow   =>  if else
+    - Advanced  Structure     =>  haeder in file  ,  footer in file , variables in file ...

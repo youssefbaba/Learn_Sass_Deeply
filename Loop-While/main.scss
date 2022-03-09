@@ -1,0 +1,25 @@
+//  Import Global Rules
+@use "sass/layout/global-rules";
+
+// Import Contact
+@use "sass/pages/contact";
+
+// Import Colors
+@use "sass/variables/colors" as *;
+
+// Import Mixins
+@use "sass/helpers/mixins" as *;
+
+// Loop => While
+
+// Declaration Of Loop While
+$counter: 1;
+@while $counter <= 10 {
+	.width-#{$counter * 100} {
+		width: $counter * 100px;
+		height: ($counter * 100px) / 2;
+	}
+	$counter: $counter + 1;
+}
+
+// width 100 , height  50

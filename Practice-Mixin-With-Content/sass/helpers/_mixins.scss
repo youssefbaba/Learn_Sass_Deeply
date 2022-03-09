@@ -1,0 +1,52 @@
+@mixin list-reset {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+@mixin circle($dimensions) {
+	border-radius: 50%;
+	width: $dimensions;
+	height: $dimensions;
+}
+@mixin centering {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin overlay($color, $opacity) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba($color, $opacity);
+}
+
+@mixin key_Frame_One($name-aniation) {
+	@-webkit-keyframes #{$name-aniation} {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+	@keyframes #{$name-aniation} {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+}
+
+@mixin key_Frame-Two($name-aniation) {
+	@-webkit-keyframes #{$name-aniation} {
+		@content;
+	}
+	@keyframes #{$name-aniation} {
+		@content;
+	}
+}

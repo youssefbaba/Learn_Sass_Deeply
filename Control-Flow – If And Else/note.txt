@@ -1,0 +1,33 @@
+// Control Flow  if and alse
+
+
+
+//  Control Flow  For element
+property @if  expression {
+    //Code Css
+}@else{
+    //Other Code Css
+}
+
+- example 
+$theme = "light";
+body {
+	@if $theme == "light" {
+		background-color: whitesmoke;
+		color: #444444;
+	} @else {
+		background-color: #444444;
+		color: whitesmoke;
+	}
+}
+
+
+
+
+//  Control Flow  For Property
+$rounded:false;
+
+.box{
+    border-raduis:if($rounded , 10px ,);
+}
+

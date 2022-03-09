@@ -1,0 +1,7 @@
+// Declaration Of Variable
+    - $Name_Of_Variable      => $counter
+
+// Loop 
+    - @for $counter  from initial_Value  end  End_Value{
+        // Code ...
+    }

@@ -1,0 +1,8 @@
+@for $counter from 1 to 100 {
+	.page-#{$counter} {
+		font-size: 20px + $counter;
+	}
+}
+.header {
+	transform: translateX(10px);
+}

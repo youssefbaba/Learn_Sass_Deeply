@@ -1,0 +1,193 @@
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+:root {
+	--main-color: red;
+}
+
+.contact {
+	font-style: 20px;
+	padding: 10px;
+	background-color: var(--main-color);
+}
+
+.parent {
+	font-weight: 700;
+	padding: 10px;
+}
+
+.parent .child {
+	font-size: 20px;
+	padding: 15px;
+	color: purple;
+	border: 1px solid lime;
+}
+
+.parent .child .grand-child {
+	font-size: 18px;
+}
+
+.parent {
+	font-weight: 700;
+	padding: 10px;
+}
+.parent .child {
+	font-size: 20px;
+	padding: 15px;
+	color: purple;
+	border: 1px solid lime;
+}
+.parent .child .grand-child {
+	font-size: 18px;
+}
+
+.parent-1 .child-1 {
+	font-size: 20px;
+	padding: 15px;
+	color: purple;
+	border: 1px solid lime;
+}
+.parent-1 .child-1 .grand-child-1 {
+	font-size: 18px;
+}
+
+.parent-2 {
+	font-weight: 700;
+	padding: 10px;
+}
+.parent-2 .child-2 {
+	font-size: 20px;
+	padding: 15px;
+	color: purple;
+	border: 1px solid lime;
+}
+.parent-2 .grand-child-2 {
+	font-size: 18px;
+}
+
+.parent-one,
+.parent-two {
+	padding: 20px;
+}
+.parent-one .child,
+.parent-two .child {
+	padding: 10px;
+}
+
+.parent-3 > .direct-child-1 {
+	padding: 10px;
+}
+.parent-3 > .direct-child-2 {
+	padding: 15px;
+}
+
+.parent-4 + .next-element {
+	color: red;
+	padding: 15px;
+}
+.parent-4 + .test {
+	border: 1px solid green;
+	font-weight: bold;
+}
+
+.parent-5 > .direct-child-1 {
+	padding: 15px;
+}
+.parent-5 .not-direct-child {
+	padding: 20px;
+}
+
+.parent-5 + .next-element {
+	padding: 15px;
+}
+.parent-5 .not-next-element {
+	padding: 20px;
+}
+
+.parent-6 {
+	color: darkblue;
+}
+.parent-6 > .child-one {
+	padding: 10px;
+}
+.parent-6 > .child-two {
+	margin: 15px;
+}
+.parent-6 > .child-three {
+	border: 1px solid red;
+}
+.parent-6 .text-not-direct-child {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.box {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	position: relative;
+}
+.box .image {
+	-ms-flex-preferred-size: 40%;
+	flex-basis: 40%;
+	padding: 10px;
+}
+.box .text {
+	-ms-flex-preferred-size: 50%;
+	flex-basis: 50%;
+	padding: 15px;
+}
+.box.red {
+	background-color: red;
+}
+.box.green {
+	background-color: green;
+}
+.box.blue {
+	background-color: blue;
+}
+.box:hover {
+	-webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.box:first-child {
+	border: 1px solid red;
+}
+.box:first-of-type {
+	border: 1px solid green;
+}
+.box::before {
+	content: "before";
+	position: absolute;
+}
+.box::after {
+	content: "after";
+	position: absolute;
+}
+.box:hover .image {
+	-webkit-transform: skew(1.2) rotate(10deg);
+	transform: skew(1.2) rotate(10deg);
+}
+:not(.box) {
+	color: black;
+}
+[dir="rtl"] .box {
+	direction: rtl;
+}
+/*# sourceMappingURL=main.css.map */

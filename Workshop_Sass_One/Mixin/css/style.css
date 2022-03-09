@@ -1,0 +1,189 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 18px;
+}
+
+body {
+  background-color: #f6f6f6;
+  padding: 30px;
+}
+
+p {
+  margin: 1rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table td,
+.table th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+@media only screen and (min-width: 992px) {
+  .table {
+    width: 50%;
+  }
+}
+
+.btn, .card-confirme, .btn-danger, .card-refuse {
+  padding: 0.2777777778em 0.6666666667em;
+  border-radius: 5px;
+}
+
+.btn, .card-confirme, .btn-danger, .card-refuse {
+  background-color: dodgerblue;
+  text-decoration: none;
+  color: #fff;
+}
+.btn:hover, .card-confirme:hover, .btn-danger:hover, .card-refuse:hover {
+  background-color: rgba(30, 143, 255, 0.8);
+  background-color: rgba(30, 144, 255, 0.5);
+  background-color: #005db7;
+}
+
+.big {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.btn-danger, .card-refuse {
+  color: #444;
+  background-color: red;
+}
+.btn-danger:hover, .card-refuse:hover {
+  background-color: rgba(255, 0, 0, 0.8);
+  background-color: rgba(255, 0, 0, 0.5);
+  background-color: #ff6666;
+}
+
+.card {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.card {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  position: relative;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+  border-top-color: red;
+  left: calc(50% - 10px);
+  bottom: -20px;
+}
+
+.card-actions {
+  display: flex;
+}
+
+.card-confirme {
+  cursor: pointer;
+}
+
+.card-refuse {
+  cursor: pointer;
+}
+
+@media only screen and (max-width:500px) {
+  .card-actions {
+    display: block;
+  }
+
+  .btn, .btn-danger, .card-confirme, .card-refuse {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .btn, .btn-danger, .card-confirme, .card-refuse {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
