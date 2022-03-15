@@ -1,0 +1,52 @@
+.element-two {
+  color: red;
+  font-weight: bold;
+}
+
+.element-three {
+  background-image: url("images/image_01");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.parent .child {
+  font-family: Tahoma;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  background-image: url("images/image_01.jpg");
+  background-image: url("images/image_01.jpg"), linear-gradient(to right, red, green);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-left: 1px solid red;
+  border-right: 1px solid green;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.error-usable,
+.element-one {
+  color: red;
+  font-weight: bold;
+}
+
+.element-one {
+  font-size: 20px;
+}
+
+.element-two {
+  font-size: 25px;
+}
+
+.element-three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=main.css.map */

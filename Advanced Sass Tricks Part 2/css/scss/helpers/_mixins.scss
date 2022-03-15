@@ -1,0 +1,14 @@
+@mixin opacity($value) {
+    zoom: 1;
+    $opacity-ie: $value * 100;
+    filter: alpha(opacity=#{$opacity-ie});
+    opacity: $value;
+}
+
+@mixin transition($values...) {
+    -webkit-transition: $values;
+    -moz-transition: $values;
+    -ms-transition: $values;
+    -o-transition: $values;
+    transition: $values;
+}

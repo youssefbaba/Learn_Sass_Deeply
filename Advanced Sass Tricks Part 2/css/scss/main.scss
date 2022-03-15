@@ -1,0 +1,65 @@
+// Import Mixins
+@import "../scss/helpers/mixins";
+// Import Placeholders
+@import "../scss/helpers/placeholders";
+
+.parent {
+    .child {
+        font: {
+            family: Tahoma;
+            weight: bold;
+            style: italic;
+            size: 20px;
+        }
+
+        margin : auto {
+            top: 40px;
+            bottom: 20px;
+        }
+
+        background: {
+            // Fallback
+            image: url("images/image_01.jpg");
+            image: url("images/image_01.jpg"), linear-gradient(to right, red, green);
+            repeat: no-repeat;
+            position: center center;
+            size: cover;
+        }
+
+        border: {
+            left: 1px solid red;
+            right: 1px solid green;
+        }
+
+        padding: {
+            left: 10px;
+            right: 20px;
+        }
+    }
+}
+
+// Created For Heritage
+.error-usable {
+    color: red;
+    font-weight: bold;
+}
+
+// Using Heritage
+.element-one {
+    @extend .error-usable;
+    font-size: 20px;
+}
+
+// Using Placeholder
+.element-two {
+    @extend %error-not-usable;
+    font-size: 25px;
+}
+
+
+.element-three {
+    @extend %background-cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

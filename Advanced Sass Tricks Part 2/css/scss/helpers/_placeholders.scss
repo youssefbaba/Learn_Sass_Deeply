@@ -1,0 +1,13 @@
+%error-not-usable {
+    color: red;
+    font-weight: bold;
+}
+
+%background-cover {
+    background: {
+        image: url("images/image_01");
+        repeat: no-repeat;
+        position: center center;
+        size: cover;
+    }
+}
